@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SinglePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css?_v=20240721043755">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240721043755">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js?_v=20240721043755"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css?_v=20240721043755">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap&_v=20240721043755" rel="stylesheet">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<div class="header__logo">
+						<a href="index.html">
+							<img src="img/header/logo.svg" alt="logo">
+						</a>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__nav-block link">
+							<li>
+								<a class="link__active" href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="#questions">Contact</a>
+							</li>
+							<li>
+								<a href="privacy.html">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="terms.html">Terms</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__action">
+						<div class="header__action-auth">
+							<a href="login.html">Log In</a>
+						</div>
+						<div class="header__action-link">
+							<a href="rooms.html">Rent a Room</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page-single-rom single">
+			<div class="single__container">
+				<div class="single-layout">
+					<section class="single-layout__product single-product">
+						<div class="single-product__gallery">
+							<div id="main-slider" class="splide">
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<img src="img/single-room/01.png" />
+										</li>
+										<li class="splide__slide">
+											<img src="img/single-room/02.png" />
+										</li>
+										<li class="splide__slide">
+											<img src="img/single-room/03.png" />
+										</li>
+										<li class="splide__slide">
+											<img src="img/single-room/04.png" />
+										</li>
+										<li class="splide__slide">
+											<img src="img/single-room/05.png" />
+										</li>
+									</ul>
+								</div>
+							</div>
+							<ul id="thumbnails" class="thumbnails">
+								<li class="thumbnail">
+									<img src="img/single-room/01.png" />
+								</li>
+								<li class="thumbnail">
+									<img src="img/single-room/02.png" />
+								</li>
+								<li class="thumbnail">
+									<img src="img/single-room/03.png" />
+								</li>
+								<li class="thumbnail">
+									<img src="img/single-room/04.png" />
+								</li>
+								<li class="thumbnail">
+									<img src="img/single-room/05.png" />
+								</li>
+							</ul>
+						</div>
+						<div class="single-product__content content-info">
+							<div class="content-info-heading">
+								<h3 class="content-info-heading__title">Apartment</h3>
+								<p class="content-info-heading__desc"><span>$3850</span>month</p>
+							</div>
+							<div class="content-info-location">
+								<span>
+									<i><img src="img/home/welcome/font-icon/location-black.svg" alt="location"></i>
+									<p>200 Redpath Avenue - Toronto, ON</p>
+								</span>
+							</div>
+							<div class="content-info-attributes">
+								<a href="#" class="content-info-attributes__attribute">2 Bedrooms</a>
+								<a href="#" class="content-info-attributes__attribute">726 ft2</a>
+								<a href="#" class="content-info-attributes__attribute">2 Bedrooms</a>
+								<a href="#" class="content-info-attributes__attribute">Individual Thermostats</a>
+								<a href="#" class="content-info-attributes__attribute">Air Conditioning</a>
+								<a href="#" class="content-info-attributes__attribute">Ensuite Laundry</a>
+								<a href="#" class="content-info-attributes__attribute">Walk-in Closet</a>
+							</div>
+							<div class="content-info-description">
+								<h4 class="content-info-description__title">Description</h4>
+								<p class="content-info-description__desc">Located at Yonge & Englinton, Toronto`s most desirable neighbourhood, Parker has been curated to create a hotel-quality rental living experience that is truly unique to Toronto.</p>
+								<div class="content-info-description__showmore">
+									<input id="read-more-check-1" type="checkbox" class="read-more-check">
+									<div class="read-more">
+										<p class="content-info-description__desc">Located at Yonge & Englinton, Toronto`s most desirable neighbourhood, Parker has been curated to create a hotel-quality rental living experience that is truly unique to Toronto.</p>
+									</div>
+									<label for="read-more-check-1" class="read-more-label"></label>
+								</div>
+							</div>
+							<div class="content-info-facilities">
+								<h4 class="content-info-facilities__title">Facilities</h4>
+								<div class="content-info-facilities__wrapper facility">
+									<span class="facility__item"><img src="img/home/welcome/font-icon/living.svg" alt="living">Shared Living Room</span>
+									<span class="facility__item"><img src="img/home/welcome/font-icon/balcony.svg" alt="living">Balcony</span>
+									<span class="facility__item"><img src="img/home/welcome/font-icon/wifi.svg" alt="living">WiFi</span>
+									<span class="facility__item"><img src="img/home/welcome/font-icon/heating.svg" alt="living">Heating</span>
+									<span class="facility__item"><img src="img/home/welcome/font-icon/washing.svg" alt="living">Washing Machine</span>
+									<span class="facility__item"><img src="img/home/welcome/font-icon/conditioner.svg" alt="living">Air Conditioner</span>
+								</div>
+								<div class="content-info-facilities__showmore">
+									<input id="read-more-check-2" type="checkbox" class="read-more-check">
+									<div class="read-more">
+										<div class="content-info-facilities__wrapper facility">
+											<span class="facility__item"><img src="img/home/welcome/font-icon/conditioner.svg" alt="living">Air Conditioner</span>
+										</div>
+									</div>
+									<label for="read-more-check-2" class="read-more-label"></label>
+								</div>
+							</div>
+							<div class="content-info-availability">
+								<h4 class="content-info-availability__title">Availability</h4>
+								<div class="content-info-availability__wrapper">
+									<p class="content-info-availability__desc">Available from: <b>26.February 2023</b></p>
+									<p class="content-info-availability__desc">Minimum stay: <b>3 Month</b></p>
+									<p class="content-info-availability__desc">Maximum stay: <b>Not detriment</b></p>
+									<p class="content-info-availability__desc">Calendar Updated: <b>1 week ago</b></p>
+								</div>
+							</div>
+							<div class="content-info-rules">
+								<h4 class="content-info-rules__title">Landlord rules</h4>
+								<div class="content-info-rules__wrapper rules">
+									<span class="rules__item"><img src="img/home/welcome/font-icon/smoke.svg" alt="living">No smoking allowed</span>
+									<span class="rules__item"><img src="img/home/welcome/font-icon/pet.svg" alt="living">Pets are not allowed</span>
+									<span class="rules__item"><img src="img/home/welcome/font-icon/overnight.svg" alt="living">Overnight guests are allowed</span>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="single-layout__sidebar single-sidebar">
+						<div class="single-sidebar-booking booking">
+							<form action="#">
+								<div class="single-sidebar-booking__header booking-header">
+									<h4 class="booking-header__title">Booking Request</h4>
+									<div class="booking-header__action action-btn">
+										<button type="button" class="action-btn__link"></button>
+										<button type="button" class="action-btn__favourite"></button>
+									</div>
+								</div>
+								<div class="single-sidebar-booking__reservation booking-reservation">
+									<div class="booking-reservation__item icon" id="checkin-container">
+										<label for="chekin">Check In:</label>
+										<i><img src="img/home/welcome/font-icon/date.svg" alt="date"></i>
+										<input type="text" class="search-filter-form__item" data-datepicker="" id="checkin" placeholder="Check In">
+										<i><img class="icon-arrow" src="img/home/welcome/font-icon/arrow-down.svg" alt="arrow"></i>
+									</div>
+									<div class="booking-reservation__item icon" id="checkout-container">
+										<label for="chekin">Check Out:</label>
+										<i><img src="img/home/welcome/font-icon/date.svg" alt="date"></i>
+										<input type="text" class="search-filter-form__item" data-datepicker="" id="checkout" placeholder="Check Out">
+										<i><img class="icon-arrow" src="img/home/welcome/font-icon/arrow-down.svg" alt="arrow"></i>
+									</div>
+								</div>
+								<div class="single-sidebar-booking__btn booking-btn">
+									<button type="submit" class="booking-btn__item">Check Booking</button>
+								</div>
+							</form>
+						</div>
+					</section>
+				</div>
+				<div class="single-similar">
+					<h2 class="single-similar__title">Similar Properties in Toronto</h2>
+					<div class="single-similar-products">
+						<article class="single-similar-products__product rental-rooms-product">
+							<div class="rental-rooms-product__img">
+								<a href="#"><img src="img/rooms/09.png" alt="product"></a>
+							</div>
+							<div class="rental-rooms-product__info product-info">
+								<div class="product-info__desc desc-item">
+									<div class="desc-item-location">
+										<h3 class="desc-item-location__title"><a href="#">Condo</a></h3>
+										<span>
+											<i><img src="img/home/welcome/font-icon/location.svg" alt="location"></i>
+											<p>25 Nicholas Avenue Toronto, ON</p>
+										</span>
+									</div>
+									<div class="desc-item-price">
+										<h3 class="desc-item-price__title">$<span>2125</span></h3>
+										<p>/ month</p>
+									</div>
+								</div>
+								<div class="product-info__properties properties-item">
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>1</span> Beds</p>
+									</div>
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>1</span> Baths</p>
+									</div>
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>540</span> sqft</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="single-similar-products__product rental-rooms-product">
+							<div class="rental-rooms-product__img">
+								<a href="#"><img src="img/rooms/10.png" alt="product"></a>
+							</div>
+							<div class="rental-rooms-product__info product-info">
+								<div class="product-info__desc desc-item">
+									<div class="desc-item-location">
+										<h3 class="desc-item-location__title"><a href="#">Condo</a></h3>
+										<span>
+											<i><img src="img/home/welcome/font-icon/location.svg" alt="location"></i>
+											<p>25 Nicholas Avenue Toronto, ON</p>
+										</span>
+									</div>
+									<div class="desc-item-price">
+										<h3 class="desc-item-price__title">$<span>2125</span></h3>
+										<p>/ month</p>
+									</div>
+								</div>
+								<div class="product-info__properties properties-item">
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>1</span> Beds</p>
+									</div>
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>1</span> Baths</p>
+									</div>
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>540</span> sqft</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="single-similar-products__product rental-rooms-product">
+							<div class="rental-rooms-product__img">
+								<a href="#"><img src="img/rooms/15.png" alt="product"></a>
+							</div>
+							<div class="rental-rooms-product__info product-info">
+								<div class="product-info__desc desc-item">
+									<div class="desc-item-location">
+										<h3 class="desc-item-location__title"><a href="#">Condo</a></h3>
+										<span>
+											<i><img src="img/home/welcome/font-icon/location.svg" alt="location"></i>
+											<p>25 Nicholas Avenue Toronto, ON</p>
+										</span>
+									</div>
+									<div class="desc-item-price">
+										<h3 class="desc-item-price__title">$<span>2125</span></h3>
+										<p>/ month</p>
+									</div>
+								</div>
+								<div class="product-info__properties properties-item">
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>1</span> Beds</p>
+									</div>
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>1</span> Baths</p>
+									</div>
+									<div class="properties-item-block">
+										<i><img src="img/home/welcome/font-icon/arrow-right-circle.svg" alt=""></i>
+										<p><span>540</span> sqft</p>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__logo">
+						<a href="#">
+							<img src="img/header/logo.svg" alt="footer-logo">
+						</a>
+					</div>
+					<div class="footer__card">
+						<h4 class="footer__card-title">Navigation</h4>
+						<nav class="footer__nav">
+							<ul class="footer__card-list">
+								<li>
+									<a href="#">Reservation Process</a>
+								</li>
+								<li>
+									<a href="#">Our Value</a>
+								</li>
+								<li>
+									<a href="#">About Us</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__card">
+						<h4 class="footer__card-title">Tenants</h4>
+						<ul class="footer__card-list">
+							<li>
+								<a href="#">Terms & Conditions</a>
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__card">
+						<h4 class="footer__card-title">Resources</h4>
+						<ul class="footer__card-list">
+							<li>
+								<a href="tel:+16474666446">+ 1 (647) 466 64 46</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.js?_v=20240721043755"></script>
+	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js?_v=20240721043755"></script>
+	<script src="js/app.min.js?_v=20240721043755"></script>
+</body>
+
+</html>
